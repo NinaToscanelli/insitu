@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+}
+
+.logo {
+  position: absolute;
+  aspect-ratio: 16/12;
+  width: 400px;
+  top: 40;
+  left: 470;
+}
+
+main {
+  margin-top: 380px;
+}
+
+input {
+  margin-top: 150px;
+  display: none;
+}
+
+.touch {
+  position: absolute;
+  top: 640;
+  aspect-ratio: 16/9;
+  width: 500px;
+  left: 400;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+video {
+  position: absolute;
+  z-index: -100;
+  transform: scale(0.5);
+  left: 120;
+  bottom: -100;
+}
