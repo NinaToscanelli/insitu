@@ -31,10 +31,11 @@ main#carousel {
 
 .item {
   padding: 20px;
-  border: 3px solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(78.44999694824219px);
+  backdrop-filter: blur(79px);
+  -webkit-backdrop-filter: blur(79px);
   position: absolute;
   width: 300px;
   height: 250px;
@@ -170,4 +171,24 @@ h4 {
 hr {
   color: #fff;
   background-color: #fff;
+}
+
+@keyframes changeWidth {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.touch {
+  animation-name: changeWidth;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
